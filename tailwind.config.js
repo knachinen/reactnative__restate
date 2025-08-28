@@ -10,7 +10,7 @@ module.exports = {
         "rubik-extrabold": ["Rubik-ExtraBold", "sans-serif"],
         "rubik-light": ["Rubik-Light", "sans-serif"],
         "rubik-medium": ["Rubik-Medium", "sans-serif"],
-        "rubik-regular": ["Rubik-Regular", "sans-serif"],
+        rubik: ["Rubik-Regular", "sans-serif"],
         "rubik-semiBold": ["Rubik-SemiBold", "sans-serif"],
       },
       colors: {
