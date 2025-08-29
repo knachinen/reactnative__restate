@@ -1,8 +1,18 @@
+import icons from "@/constants/icons";
 import images from "@/constants/images";
 import React from "react";
-import { Image, SafeAreaView, ScrollView, Text, View } from "react-native";
+import {
+  Image,
+  SafeAreaView,
+  ScrollView,
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 
 const SignIn = () => {
+  const handleLogin = () => {};
+
   return (
     <SafeAreaView className="bg-white flex-1">
       <View className="flex-1">
@@ -21,6 +31,25 @@ const SignIn = () => {
             Let{"'"}s Get You Cloer to {"\n"}
             <Text className="text-primary-300">Your Dream Home</Text>
           </Text>
+
+          <Text className="text-lg text-center font-rubik text-black-200 mt-12">
+            Sign in to ReState with Google
+          </Text>
+          <TouchableOpacity
+            onPress={handleLogin}
+            className="bg-white shadow-md shadow-zinc-300 rounded-full w-full py-4 mt-5"
+          >
+            <View className="flex flex-row items-center justify-center">
+              <Image
+                source={icons.google}
+                className="w-5 h-5"
+                resizeMode="contain"
+              />
+              <Text className="text-lg font-rubik-medium text-black-300 ml-2">
+                Sign in with Google
+              </Text>
+            </View>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>
