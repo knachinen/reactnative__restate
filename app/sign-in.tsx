@@ -1,5 +1,6 @@
 import icons from "@/constants/icons";
 import images from "@/constants/images";
+import { login } from "@/lib/appwrite";
 import React from "react";
 import {
   Image,
@@ -11,7 +12,13 @@ import {
 } from "react-native";
 
 const SignIn = () => {
-  const handleLogin = () => {};
+  const handleLogin = async () => {
+    const result = await login();
+
+    if (result) {
+      console.log("Login Success");
+    }
+  };
 
   return (
     <SafeAreaView className="bg-white flex-1">
