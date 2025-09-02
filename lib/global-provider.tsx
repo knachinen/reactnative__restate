@@ -6,7 +6,7 @@ interface GlobalContextType {
   isLogged: boolean;
   user: User | null;
   loading: boolean;
-  refetch: () => void;
+  refetch: (newParams?: Record<string, string | number>) => Promise<void>;
 }
 
 interface User {
